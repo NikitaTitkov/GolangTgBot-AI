@@ -76,8 +76,7 @@ func main() {
 	}
 	// Get the bot token from the environment variable.
 	botToken := os.Getenv("TG_KEY")
-	fmt.Println(botToken)
-
+	
 	// Create a new bot with the obtained token.
 	bot, err := tgbotapi.NewBotAPI(botToken)
 	if err != nil {
